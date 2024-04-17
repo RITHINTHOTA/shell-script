@@ -1,2 +1,5 @@
-hello world
-iam learning devops
+#!/bin/bash
+
+
+echo "hello world"
+echo "iam learning devops"
