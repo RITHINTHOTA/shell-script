@@ -2,9 +2,9 @@
 #!/bin/bash
 
 NUMBER=$1
-if [$NUMBER -le 20]
+if [$NUMBER -lt 20]
 then 
-echo "Given Number $NUMBER is <_ 20"
+echo "Given Number $NUMBER is < 20"
 else
-echo "Given Number $NUMBER is >_ 20"
+echo "Given Number $NUMBER is > 20"
 fi
