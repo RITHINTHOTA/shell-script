@@ -24,6 +24,8 @@ then
     exit 1
 else
     echo "your a root user"
+fi
+
 
 for i in $@
 do
@@ -34,6 +36,6 @@ do
             echo -e  "$i Already installed..$Y SKIPPING $N "
         else
              dnf install $i -y &>> $LOGFILE
-              VALIDATE "$?" "Installing $i"
+             VALIDATE "$?" "Installing $i"
         fi
 done
