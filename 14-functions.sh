@@ -7,6 +7,7 @@ VALIDATE(){
     then
         echo "$2....FAILURE"
         exit 1
+    else
         echo "$2....SUCESS"
     fi
 }
