@@ -27,14 +27,13 @@ else
 
 for i in $@
 do
-echo "package to install $i"
-dnf list installed $i &>> $LOGFILE
-if [ $? -eq 0 ]
-then
-    echo -e  "$i Already installed..$Y SKIPPING $N "
-else
-    dnf install $i -y &>> $LOGFILE
-    VALIDATE "$?" "Installing $i"
-fi
-
+          echo "package to install $i"
+           dnf list installed $i &>> $LOGFILE
+        if [ $? -eq 0 ]
+        then
+            echo -e  "$i Already installed..$Y SKIPPING $N "
+        else
+             dnf install $i -y &>> $LOGFILE
+              VALIDATE "$?" "Installing $i"
+        fi
 done
