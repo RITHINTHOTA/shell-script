@@ -9,7 +9,7 @@ else
     echo "you are a root user"
 fi
 
-dnf install mysqll -y
+dnf install mysql -y
 if [ $? -ne 0 ]
 then
    echo "Installation of mysql----Failure"
@@ -23,6 +23,7 @@ dnf install git -y
 if [ $? -ne 0 ]
 then 
     echo "Installation of git----Failure"
+    exit 1
 else
      echo "Installation of git----Sucess"
 fi
