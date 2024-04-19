@@ -9,7 +9,9 @@ else
     echo "you are a root user"
 fi
 
-dnf install mysql -y
-
-echo "something happening"
+dnf install mysqll -y
+if [ $? -ne 0 ]
+then
+   echo "Installation of mysql----Failure"
+fi
 
