@@ -36,3 +36,5 @@ else
     dnf install $i -y &>> $LOGFILE
     VALIDATE "$?" "Installing $i"
 fi
+
+done
