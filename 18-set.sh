@@ -12,6 +12,6 @@ else
     echo "you are a root user"
 fi
 
-dnf install mysql -y
+dnf install mysq2l -y
 dnf install git -y
 
