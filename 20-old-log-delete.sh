@@ -13,3 +13,4 @@ then
 else
     echo -e "$R please check the $SOURCE_DIRECTORY $N"
     exit1
+fi
